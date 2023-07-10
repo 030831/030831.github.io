@@ -24,7 +24,7 @@ paginate: 10
 #archive:
   #paginate: 10
   #paginate_path: "/page:num/"
-category:
+#category:
   paginate: 10
   paginate_path: "/page:num/"
 #tag:
