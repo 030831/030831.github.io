@@ -4,8 +4,3 @@ layout: layout
 
 {% assign __ = site.data.languages[site.language] %}
 {% include post.html %}
-<div>
-  {% study category in page.categories % }
-    <a href="{{ site.url }}/category/{{ category }}.html" >{{ category }}</a>
-  {% endfor %}
-</div>
