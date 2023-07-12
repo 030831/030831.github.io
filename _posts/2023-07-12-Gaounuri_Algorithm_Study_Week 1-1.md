@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gaounuri_Algorithm_Study_Week 1-1"
+title: "백준 1049 : 기타줄 (Python)"
 categories: Gaounuri_Algorithm_Study
 ---
 
