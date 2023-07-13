@@ -1,0 +1,75 @@
+---
+layout: post
+title: "백준 1080 : 행렬 ( Python )"
+categories: Gaounuri_Algorithm_Study
+---
+
+[문제 링크](https://www.acmicpc.net/problem/1080)
+
+> 📌 사용 알고리즘 : Greedy , implementation
+
+행렬 A 를 행렬 B 로 바꾸는데 필요한 최소값을 구하는 문제입니다.
+
+이때 3×3 크기에 한해서 뒤집을 수 있습니다.
+
+몇번 시뮬레이션을 돌려보면 **뒤집는 순서는 결과에 영향을 미치지 않습니다.**
+
+따라서 최소값을 구하기 위해 모든 경우의 수를 고려하지 않아도 됩니다.
+
+왼쪽 위에서 부터 하나씩 탐색해서 뒤집어야 한다면 바로 뒤집어 줍니다.
+
+필수적으로 뒤집어야 하는 모든 부분을 뒤집었음에도 불구하고 행렬 A 와 행렬 B 가 다르면 -1 를 출력하고 그렇지 않다면 뒤집는 횟수를 출력하면됩니다.
+
+> 📌 코드
+
+```python
+import sys,math
+input=sys.stdin.readline
+from collections import deque
+LMI=lambda:list(map(int,input().split()))
+LMS=lambda:list(map(str,input().split()))
+MI=lambda:map(int,input().split())
+I=lambda:int(input())
+GI=lambda x:[ LMI() for _ in range(x) ]
+GS=lambda x:[ LMS() for _ in range(x) ]
+V=lambda x,y:[ [False]*y for _ in range(x) ]
+
+def matrixReverse(x,y):
+
+    for i in range(x,x+3):
+        for j in range(y,y+3):
+            if graphA[i][j]:
+                graphA[i][j] = 0
+            else:
+                graphA[i][j] = 1
+
+N,M=MI()
+
+graphA = [ list(map(str,input().rstrip())) for _ in range(N) ]
+graphB = [ list(map(str,input().rstrip())) for _ in range(N) ]
+
+for i in range(N):
+    for j in range(M):
+        graphA[i][j] = int(graphA[i][j])
+        graphB[i][j] = int(graphB[i][j])
+
+answer = 0
+visited = True
+for i in range(N):
+    for j in range(M):
+        if i+2<N and j+2<M and graphA[i][j]!=graphB[i][j]:
+            matrixReverse(i,j)
+            answer += 1
+
+
+for i in range(N):
+    for j in range(M):
+        if graphA[i][j] != graphB[i][j]:
+            visited = False
+
+if visited:
+    print(answer)
+else:
+    print(-1)
+
+```
