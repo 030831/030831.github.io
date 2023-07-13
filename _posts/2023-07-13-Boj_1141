@@ -1,0 +1,57 @@
+---
+layout: post
+title: "백준 1141 : 접두사 ( Python )"
+categories: Gaounuri_Algorithm_Study
+---
+
+[문제 링크](https://www.acmicpc.net/problem/1141)
+
+> 📌 사용 알고리즘 : bruteForcing
+
+정렬과 그리디를 사용해서 푸는 방법도있지만 완전탐색을 통해 풀었습니다.
+
+접두사 X 집합이 되기 위해서는 어떤 한 단어가 다른단어의 접두어가 되어서는 안됩니다.
+
+만약 `a` 라는 단어가 있다면 `a` 로 시작하는 모든 단어는 같은 집합에 존재해선 안됩니다.
+
+따라서 모든 단어에 대해 다른 단어의 접두어가 된다면 그 단어를 못쓰므로
+
+그 부분을 모두 제외하면 **다른단어의 접두어가 되지 않는 단어의 집합** 을 구할 수 있습니다.
+
+다른 단어의 접두어가 되지 않는 단어의 집합이 접두사 X 집합의 최대값이 됩니다.
+
+주의할점은 중복단어가 입력에 주어질 수 있으므로 `set` 을 통해 중복값을 제거해줘야 합니다.
+
+{ `a` , `a` } 인경우 답이 0 이 아니라 1이기 때문입니다.
+
+> 📌 코드
+
+```python
+import sys,math
+input=sys.stdin.readline
+from collections import deque
+LMI=lambda:list(map(int,input().split()))
+LMS=lambda:list(map(str,input().split()))
+MI=lambda:map(int,input().split())
+I=lambda:int(input())
+GI=lambda x:[ LMI() for _ in range(x) ]
+GS=lambda x:[ LMS() for _ in range(x) ]
+V=lambda x,y:[ [False]*y for _ in range(x) ]
+
+N = I()
+L = [ input().rstrip() for _ in range(N) ]
+L = set(L)
+L = list(L)
+visited=[True]*len(L)
+answer = 0
+
+for i in range(len(L)):
+    for j in range(len(L)):
+        if i==j: continue
+        if len(L[i]) >= len(L[j]) and L[i][:len(L[j])] == L[j]:
+            visited[j] = False
+        elif len(L[i]) <= len(L[j]) and L[j][:len(L[i])] == L[i]:
+            visited[i] = False
+
+print(sum(visited))
+```
