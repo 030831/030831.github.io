@@ -6,7 +6,8 @@ categories: Gaounuri_Spring_Study
 
 > ### 📌 Information architecture 개요
 
-![](https://velog.velcdn.com/images/030831/post/511c2e67-491c-490b-b76a-564fc1beab7a/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/88edb33b-13fb-4054-a205-785d9ad6b844)
+
 
 `Information architecture` 란 공유 정보 환경의 구조 설계 방법 입니다.
 
@@ -14,7 +15,8 @@ categories: Gaounuri_Spring_Study
 
 사용자가 어떤 컨텐츠를 원하는지 , 어떤 종류의 정보를 다루는지 , 사용자가 어떻게 컨텐츠를 사용할지 를 기준으로 방향을 잡습니다.
 
-![](https://velog.velcdn.com/images/030831/post/1514c21a-abb7-4ef2-8e0f-377250dd2ac9/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/e27481ef-224a-4352-873d-aa8ae5a2c6a8)
+
 
 `IA` 는 총 4가지 구성요소가 있습니다.
 
@@ -33,14 +35,16 @@ categories: Gaounuri_Spring_Study
 
 * `Hierarchy` : 계층적
 
-![](https://velog.velcdn.com/images/030831/post/0156b5ed-c245-4c8e-8031-dc87a9a8e4ee/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/585419dc-d7d5-43db-bc50-589907e5d6fd)
+
 
 
 계층적 시스템은 중요도나 관련성을 기준으로 정렬하여 `Top-Down Approach` 형식을 가지고 있습니다. 트리 형식과도 비슷합니다.
 
 * `Sequential` : 순차적
 
-![](https://velog.velcdn.com/images/030831/post/5989dabb-1cf5-4268-b4ec-6df086382c3e/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/e9d909e7-2dbb-4b0a-886d-bdf15163960b)
+
 
 순차적 시스템은 처음 어플을 설치하면 화면에 있는 버튼과 같은 정보를 순차적으로 보여주는 형식과 같습니다.
 사용자는 제공되는 정보만 수집할수 있으므로 너무많은 정보에 대한 복잡성을 느끼는것을 줄여줍니다.
@@ -48,7 +52,8 @@ categories: Gaounuri_Spring_Study
 
 * `Matrix` : 행렬적
 
-![](https://velog.velcdn.com/images/030831/post/92f476d5-aefa-4d8c-8eaa-84fefc761d21/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/6756a790-faba-4dbf-8cc3-24d2744d54d0)
+
 
 행렬적 시스템은 사용자가 선호하는 탐색 방법을 선택할 수 있도록 합니다.
 순차적 시스템과 상반되는 형식으로 년도별 , 조회순 과 같은 정렬 기준을 선택할 수 있습니다.
@@ -61,7 +66,8 @@ categories: Gaounuri_Spring_Study
 
 > #### 📌 Navigation System
 
-![](https://velog.velcdn.com/images/030831/post/3d8b1653-b9a9-4860-bc32-487e53ce572e/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/0c6cd84b-c1a4-4c0e-8e5a-81c90756227d)
+
 
 네비게이션 시스템은 사용자가 원하는 정보에 도달하기 위해 정보를 탐색할 수 있는 방법을 제공합니다.
 
@@ -71,7 +77,8 @@ categories: Gaounuri_Spring_Study
 
 > #### 📌 Searching System
 
-![](https://velog.velcdn.com/images/030831/post/3fbdcd39-7283-4e08-a366-3cf69d06b46c/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/b925d204-ec50-4fff-a543-1eab4f43ea57)
+
 
 검색 시스템은 사용자가 많은 데이터를 효율적으로 분류하기 위해 존재합니다.
 
@@ -84,14 +91,16 @@ categories: Gaounuri_Spring_Study
 
 * `The principle of objects`
 
-![](https://velog.velcdn.com/images/030831/post/230c9df8-96d0-4b8a-8520-fb5c3f9c5ff0/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/f63974d0-d6a8-4e74-8647-01a1258db554)
+
 
 
 이 원칙은 콘텐츠를 보는 방법과 관련되어있습니다. 하나의 콘텐츠를 통해 다른 데이터와 연관지음으로써 사용자에게 더 많은 정보를 제공할 수 있습니다.
 
 * `The principle of choices`
 
-![](https://velog.velcdn.com/images/030831/post/23328054-6b52-4ada-9123-676a61f9ebc2/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/4be96752-ab5a-49c6-86b9-c2c606a5a303)
+
 
 시스템을 설계할때 사용자에게 유의미한 선택을 제공하도록 해야합니다.
 또한 각각의 선택이 특정한 무언가에 집중되어있어야 합니다.
@@ -101,20 +110,22 @@ categories: Gaounuri_Spring_Study
 
 * `The principle of disclosure`
 
-![](https://velog.velcdn.com/images/030831/post/d6f4d9c4-969c-4278-852a-9e56b6f3c140/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/d14cf0bd-9bb6-4600-974a-5b553d805f32)
+
 
 사용자에게 필요한 정보를 주는것이 중요합니다. 케이크에 대한 정보를 원한다면 단순히 케이크가 무엇인지에 대한 정보 뿐만 아니라 레시피 , 만드는데 걸리는 시간 , 난이도와 같은 추가 정보를 주면 더 의미있는 정보 제공이 됩니다.
 
 * `The principle of exemplars`
 
+![image](https://github.com/030831/030831.github.io/assets/101914089/46bf203d-a990-4633-8a79-01d329ab4eff)
 
-![](https://velog.velcdn.com/images/030831/post/08f0eddc-5898-4381-b784-c464ddeddaf2/image.png)
 
 카테고리의 내용을 예를 들면서 설명하면 효과적으로 정보를 이해할 수 있습니다. 예시나 이미지를 통해 카테고리를 소개하는 것이 목적입니다,
 
 * `The principle of front doors`
 
-![](https://velog.velcdn.com/images/030831/post/194aa490-cc7f-4a14-b5dc-dc1f635d41a0/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/19ed6aa4-1316-410c-afe1-f7d48cc91163)
+
 
 웹사이트를 방문할때 그 웹사이트를 아는 상태에서 방문하는것보다 이것저것 검색하다가 우연히 방문하게 되는 경우가 매우 많습니다.
 
@@ -128,7 +139,8 @@ categories: Gaounuri_Spring_Study
 
 * `The principle of focused navigation`
 
-![](https://velog.velcdn.com/images/030831/post/c34f1cff-ca94-41b8-8f64-86dcfcaa96f9/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/925f1670-0a67-4480-b091-41170a949c01)
+
 
 다른 컨텐츠나 다른 정보로 이동하기 위한 아이콘이나 버튼을 한 화면에 전부 넣어선 안됩니다. 잘 사용하지 않는 연락처 페이지가 제거되면 웹 사이트의 사용성이 향상됩니다.
 
@@ -137,7 +149,8 @@ categories: Gaounuri_Spring_Study
 
 * `The principle of growth`
 
-![](https://velog.velcdn.com/images/030831/post/ff9cae3e-1323-4194-b0ae-5c619029075a/image.png)
+![image](https://github.com/030831/030831.github.io/assets/101914089/9d4eb726-bc3d-4177-bfa1-e15c96775bfa)
+
 
 정보의 양은 시간이 지날수록 기하급수적으로 증가합니다.
 따라서 미래에 어떤 정보들이 들어올지 , 그러한 정보가 들어올땐 어떻게 효율적으로 개편할지를 생각해야 합니다.
