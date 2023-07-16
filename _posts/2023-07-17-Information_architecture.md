@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Information architecture"
+categories: Gaounuri_Spring_Study
 ---
 
 > ### 📌 Information architecture 개요
