@@ -8,7 +8,6 @@ categories: Gaounuri_Spring_Study
 
 ![image](https://github.com/030831/030831.github.io/assets/101914089/88edb33b-13fb-4054-a205-785d9ad6b844)
 
-
 `Information architecture` 란 공유 정보 환경의 구조 설계 방법 입니다.
 
 `IA` 의 목적은 사용자가 정보를 찾고 작업을 완료하기 쉽도록 설계하는 것입니다.
