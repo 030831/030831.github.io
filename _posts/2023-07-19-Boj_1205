@@ -1,0 +1,68 @@
+---
+layout: post
+title: "백준 1205 : 등수 구하기 ( Python )"
+categories: Gaounuri_Algorithm_Study
+---
+
+[문제 링크](https://www.acmicpc.net/problem/1205)
+
+> 📌 사용 알고리즘 : `implementation`
+
+순수 구현문제입니다.
+
+점수가 `100, 90, 90, 80` 일때는 등수가 `1,2,2,4` 등입니다.
+즉 같은 점수는 같은 등수로 처리해주면됩니다.
+
+
+* `4 10 10`
+`20 20 20 20`
+
+주의할것은 위 입력이 답이 2등이 아니라 5등입니다.
+
+추가해야할 점수가 중복될때는 `L` 리스트에서 `rank = L.index(score)+1` 로 구할 수 있습니다.
+
+점수가 특정 범위 안에 포함되어있고 중복되지 않을때는 그냥 인덱스+1 가 답입니다.
+
+예외처리해줘야 하는 부분이 조금 까다롭습니다.
+
+갱신할 점수가 모든 점수 리스트보다 작을때는 리스트길이 + 1 이 정답입니다. 단 이때 랭킹 리스트에 올라 갈 수 있는 점수의 개수 `P` 를 초과해서는 안됩니다.
+
+또 `N` 이 0 일때도 예외처리를 해줘야합니다.
+
+구현은 쉬운데 반례가 많아서 좀 까다로웠던 문제였습니다.
+
+> 📌 코드
+
+```python
+import sys,math
+input=sys.stdin.readline
+from functools import lru_cache
+from collections import deque
+LMI=lambda:list(map(int,input().split()))
+LMS=lambda:list(map(str,input().split()))
+MI=lambda:map(int,input().split())
+I=lambda:int(input())
+GI=lambda x:[ LMI() for _ in range(x) ]
+GS=lambda x:[ LMS() for _ in range(x) ]
+V=lambda x,y:[ [False]*y for _ in range(x) ]
+
+N,score,P = MI()
+if N:
+    L=LMI()
+    rank = -1
+    if score in L:
+        if L.index(score) + L.count(score) + 1 > P:
+            pass
+        else:
+            rank = L.index(score)+ 1
+    else:
+        for i in range(len(L)):
+            if score>L[i]:
+                rank = i+1
+                break
+        if min(L)>=score and len(L)+1<=P:
+            rank = len(L)+1
+    print(rank)
+else:
+    print(1)
+```
