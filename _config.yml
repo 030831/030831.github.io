@@ -37,17 +37,26 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 # Separator
 #excerpt_separator: <!-- more -->
 
-# Code Highlighter
-## 'pygments' is unsupported on GitHub Pages now.
-highlighter: rouge
-highlight:
-  line_number: true
-
-#### Markdown Processors
-## 'redcarpet' is unsupported on GitHub Pages now.
+# Conversion
 markdown: kramdown
-kramdown:
-    input: GFM
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# 아래 내용 수정
+# # Code Highlighter
+# ## 'pygments' is unsupported on GitHub Pages now.
+# highlighter: rouge
+# highlight:
+#   line_number: true
+
+# #### Markdown Processors
+# ## 'redcarpet' is unsupported on GitHub Pages now.
+# markdown: kramdown
+# kramdown:
+#     input: GFM
+
 
 # Default Attributes
 ## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
